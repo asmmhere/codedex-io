@@ -1,0 +1,120 @@
+body{
+    background-color: #7F9F80;
+}
+.sip{  
+    font-family: "Noto Serif Display", serif;
+    font-size: 7rem;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+h2{
+    grid-column: span 2;
+}
+.caf{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+}
+.noncaf{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.menu {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.menu h2 {
+    color: black;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.menu h2 span {
+    color: black;
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+.menu > div {
+    margin-top: 20px;
+}
+
+.menu > div > div {
+    margin-bottom: 10px;
+}
+
+.menu h3 {
+    background-color: gray;
+    color: black;
+    padding: 10px;
+    margin: 0;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.caf, .noncaf {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.caf div, .noncaf div {
+    padding: 8px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.caf div:nth-child(even), .noncaf div:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+/* 3D Effect */
+.items {
+    position: relative;
+    transform-style: preserve-3d;
+    transform: translateZ(20px);
+    transition: transform 0.3s ease;
+}
+
+.caf:hover, .noncaf:hover {
+    transform: translateZ(30px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+#calendar{
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+}
+table {
+    width: 10%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    border: 1px solid #ddd;
+    text-align: center;;
+}
+th {
+    background-color: #f2f2f2;
+}
+td {
+    height: 10px;
+}
+.event{
+    background-color: pink;
+}
+li{
+    list-style: none;
+}
